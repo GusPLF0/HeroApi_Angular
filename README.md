@@ -1,7 +1,5 @@
 # HeroAngular
-![image](https://github.com/GusPLF0/HeroApi_Angular/assets/79981630/11e5bbd4-1271-40bc-941e-9064f1854a0a)
-![image](https://github.com/GusPLF0/HeroApi_Angular/assets/79981630/ed439166-f15b-4670-9ebf-fa4c8644d971)
-![image](https://github.com/GusPLF0/HeroApi_Angular/assets/79981630/8b86dc3e-f5ba-47b0-bbad-0468bfa7c5d7)
+![image](https://github.com/GusPLF0/HeroApi_Angular/assets/79981630/18ff3f4b-9eb9-4f78-b6cf-9442bc4a5a6b)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.2.
