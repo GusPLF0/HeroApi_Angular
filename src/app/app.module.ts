@@ -6,17 +6,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AddComponent } from './components/pages/add/add.component';
+import { HeroFormComponent } from './components/hero-form/hero-form.component';
+import { EditComponent } from './components/pages/edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     HomeComponent,
     AddComponent,
+    HeroFormComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,

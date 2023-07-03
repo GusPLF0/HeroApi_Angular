@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterComponent } from './footer.component';
+import { HeroFormComponent } from './hero-form.component';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('HeroFormComponent', () => {
+  let component: HeroFormComponent;
+  let fixture: ComponentFixture<HeroFormComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FooterComponent]
+      declarations: [HeroFormComponent]
     });
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(HeroFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

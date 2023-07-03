@@ -32,8 +32,8 @@ export class HeroService {
     return this.http.post<CreateHero>(this.apiUrl, hero)
   }
 
-  update(id: string, hero: string) {
-    return this.http.put(this.apiUrl + "/" + id, hero);
+  update(id: string, hero: CreateHero) {
+    return this.http.put<CreateHero>(this.apiUrl + "/" + id, hero);
   }
 
 }

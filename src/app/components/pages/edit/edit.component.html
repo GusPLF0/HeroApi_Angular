@@ -3,9 +3,11 @@
     <div class="col-md-15">
       <div class="card bg-dark text-white">
         <div class="  card-header ">
-          <h4>Add a Hero</h4>
+          <h4>Editing a Hero</h4>
         </div>
-        <app-hero-form (onSubmit)="createHandler($event)"></app-hero-form>
+        <ng-container *ngIf="hero">
+          <app-hero-form (onSubmit)="editHandler($event)" [heroData]="hero"></app-hero-form>
+        </ng-container>
       </div>
     </div>
   </div>

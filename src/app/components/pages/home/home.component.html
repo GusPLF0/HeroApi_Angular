@@ -29,7 +29,7 @@
         <td>{{hero.intelligence}}</td>
         <td>{{hero.dexterity}}</td>
         <td>{{hero.agility}}</td>
-        <td><button class="btn btn-success">Edit</button></td>
+        <td><button class="btn btn-success" (click)="navigateToEdit(hero.heroId)">Edit</button></td>
         <td><button class="btn btn-danger" (click)="deleteHero(hero)">Delete</button></td>
 
       </tr>

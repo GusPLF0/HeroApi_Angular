@@ -29,7 +29,9 @@ export class HomeComponent {
     this.router.navigate(['/add']);
   }
 
-  // editHero(hero: Hero) {
-  //   this.heroService.
-  // }
+  navigateToEdit(heroId: string) {
+    this.router.navigate(['/edit'], { queryParams: { heroId: heroId } })
+  }
+
+
 }
