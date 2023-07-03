@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col d-flex justify-content-end">
+      <button type="button" class="btn btn-dark" (click)="navigateToAdd()">Add new hero</button>
+    </div>
+  </div>
+
+</div>
+<div class="container meu-container">
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Race</th>
+        <th scope="col">Strength</th>
+        <th scope="col">Intelligence</th>
+        <th scope="col">Dexterity</th>
+        <th scope="col">Agility</th>
+        <th scope="col" colspan="2">Actions</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let hero of heroList">
+      <tr>
+        <th scope="row">{{hero.heroId}}</th>
+        <td>{{hero.name}}</td>
+        <td>{{hero.race}}</td>
+        <td>{{hero.strength}}</td>
+        <td>{{hero.intelligence}}</td>
+        <td>{{hero.dexterity}}</td>
+        <td>{{hero.agility}}</td>
+        <td><button class="btn btn-success">Edit</button></td>
+        <td><button class="btn btn-danger" (click)="deleteHero(hero)">Delete</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

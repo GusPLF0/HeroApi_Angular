@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-15">
+      <div class="card bg-dark text-white">
+        <div class="  card-header ">
+          <h4>Add a Hero</h4>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="heroForm" (ngSubmit)="submit()" #formDir="ngForm">
+            <div class="mb-3 form-group">
+              <label>Hero name</label>
+              <input class="form-control" placeholder="Batman" formControlName="heroName"
+                [ngClass]="{ 'is-invalid': heroName.invalid && formDir.submitted }">
+              <div *ngIf="heroName.invalid && formDir.submitted" class="invalid-feedback">
+                The hero need a name
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>Hero race</label>
+              <select class="form-control" formControlName="heroRace">
+                <option>HUMAN</option>
+                <option>ALIEN</option>
+                <option>DIVINE</option>
+                <option>CYBORG</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label>Hero strength</label>
+              <input type="number" class="form-control" placeholder="10" formControlName="heroStrength"
+                [ngClass]="{ 'is-invalid': heroStrength.invalid && formDir.submitted }">
+              <div *ngIf="heroStrength.invalid && formDir.submitted" class="invalid-feedback">
+                The hero need a valid Strength value
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>Hero agility</label>
+              <input type="number" class="form-control" placeholder="10" formControlName="heroAgility"
+                [ngClass]="{ 'is-invalid': heroAgility.invalid && formDir.submitted }">
+              <div *ngIf="heroAgility.invalid && formDir.submitted" class="invalid-feedback">
+                The hero need a valid Agility value
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>Hero dexterity</label>
+              <input type="number" class="form-control" placeholder="10" formControlName="heroDexterity"
+                [ngClass]="{ 'is-invalid': heroDexterity.invalid && formDir.submitted }">
+              <div *ngIf="heroDexterity.invalid && formDir.submitted" class="invalid-feedback">
+                The hero need a valid Dexterity value
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label>Hero intelligence</label>
+              <input type="number" class="form-control" placeholder="10" formControlName="heroIntelligence"
+                [ngClass]="{ 'is-invalid': heroIntelligence.invalid && formDir.submitted }">
+              <div *ngIf="heroIntelligence.invalid && formDir.submitted" class="invalid-feedback">
+                The hero need a valid Intelligence value
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="submit" class="btn btn-light" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
