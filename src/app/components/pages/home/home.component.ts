@@ -21,7 +21,6 @@ export class HomeComponent {
 
   deleteHero(hero: Hero) {
     this.heroList = this.heroList.filter((h) => hero.heroId !== h.heroId)
-    console.log(hero.heroId);
     this.heroService.remove(hero.heroId).subscribe();
   }
 

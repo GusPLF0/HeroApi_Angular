@@ -38,22 +38,24 @@
     </div>
 
     <div class="mb-3">
-      <label>Hero dexterity</label>
-      <input type="number" class="form-control" placeholder="10" formControlName="heroDexterity"
-        [ngClass]="{ 'is-invalid': heroDexterity.invalid && formDir.submitted }">
-      <div *ngIf="heroDexterity.invalid && formDir.submitted" class="invalid-feedback">
-        The hero need a valid Dexterity value
-      </div>
-    </div>
-
-    <div class="mb-3">
       <label>Hero intelligence</label>
       <input type="number" class="form-control" placeholder="10" formControlName="heroIntelligence"
         [ngClass]="{ 'is-invalid': heroIntelligence.invalid && formDir.submitted }">
       <div *ngIf="heroIntelligence.invalid && formDir.submitted" class="invalid-feedback">
-        The hero need a valid Intelligence value
+        The hero needs a valid Intelligence value
       </div>
     </div>
+
+    <div class="mb-3">
+      <label>Hero dexterity</label>
+      <input type="number" class="form-control" placeholder="10" formControlName="heroDexterity"
+        [ngClass]="{ 'is-invalid': heroDexterity.invalid && formDir.submitted }">
+      <div *ngIf="heroDexterity.invalid && formDir.submitted" class="invalid-feedback">
+        The hero needs a valid Dexterity value
+      </div>
+    </div>
+
+
 
     <div class="mb-3">
       <input type="submit" class="btn btn-light" />

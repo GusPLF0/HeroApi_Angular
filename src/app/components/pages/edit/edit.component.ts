@@ -36,10 +36,11 @@ export class EditComponent {
       name: hero.heroName,
       race: hero.heroRace,
       agility: hero.heroAgility,
-      intelligence: hero.heroIntelligence,
-      dexterity: hero.heroDexterity,
+      intelligence: hero.heroDexterity,
+      dexterity: hero.heroIntelligence,
       strength: hero.heroStrength
     };
+
 
     this.heroService.update(id, this.toUpdateHero).subscribe();
 

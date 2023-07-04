@@ -21,10 +21,10 @@ export class AddComponent {
     this.toCreateHero = {
       name: hero.heroName,
       race: hero.heroRace,
+      strength: hero.heroStrength,
       agility: hero.heroAgility,
-      dexterity: hero.heroDexterity,
-      intelligence: hero.heroIntelligence,
-      strength: hero.heroStrength
+      intelligence: hero.heroDexterity,
+      dexterity: hero.heroIntelligence
     };
 
     this.heroService.create(this.toCreateHero).subscribe();

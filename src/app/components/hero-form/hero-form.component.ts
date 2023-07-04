@@ -26,6 +26,7 @@ export class HeroFormComponent implements OnInit {
       heroDexterity: new FormControl(this.heroData ? this.heroData.dexterity : '', [Validators.required]),
       heroIntelligence: new FormControl(this.heroData ? this.heroData.intelligence : '', [Validators.required])
     });
+
   }
 
   get heroName() {
@@ -51,7 +52,6 @@ export class HeroFormComponent implements OnInit {
     if (this.heroForm.invalid) {
       return;
     }
-
     this.onSubmit.emit(this.heroForm.value)
   }
 }

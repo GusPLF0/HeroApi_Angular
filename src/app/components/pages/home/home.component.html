@@ -14,9 +14,9 @@
         <th scope="col">Name</th>
         <th scope="col">Race</th>
         <th scope="col">Strength</th>
+        <th scope="col">Agility</th>
         <th scope="col">Intelligence</th>
         <th scope="col">Dexterity</th>
-        <th scope="col">Agility</th>
         <th scope="col" colspan="2">Actions</th>
       </tr>
     </thead>
@@ -26,9 +26,9 @@
         <td>{{hero.name}}</td>
         <td>{{hero.race}}</td>
         <td>{{hero.strength}}</td>
+        <td>{{hero.agility}}</td>
         <td>{{hero.intelligence}}</td>
         <td>{{hero.dexterity}}</td>
-        <td>{{hero.agility}}</td>
         <td><button class="btn btn-success" (click)="navigateToEdit(hero.heroId)">Edit</button></td>
         <td><button class="btn btn-danger" (click)="deleteHero(hero)">Delete</button></td>
 
